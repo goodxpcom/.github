@@ -1,0 +1,26 @@
+name: Decision for the director
+description: A choice only the director can make
+labels: ["kind:decision", "needs:director"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision
+      description: One question, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Two or three options, each with its effect and cost.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: The option the team recommends, and why.
+    validations:
+      required: true
+

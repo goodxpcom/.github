@@ -1,0 +1,31 @@
+name: Task
+description: A piece of work for one team member
+labels: ["kind:task"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true when this is done? Write it from the player's or user's side when it applies.
+    validations:
+      required: true
+  - type: dropdown
+    id: owner
+    attributes:
+      label: Owner
+      options: [Atlas, Elias Marlowe, Kenji Arada, Mira Castellan, Leyla Aksoy, Director]
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How we check it
+      description: The evidence that shows it is done, and who accepts it.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and links
+      description: Production records, references, Drive folders, earlier issues.
+
